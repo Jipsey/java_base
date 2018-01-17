@@ -1,5 +1,5 @@
 class Main {
-    //Stepik code: start
+
     public Label checkLabels(TextAnalyzer[] analyzers, String text) {
 
         for (TextAnalyzer ta: analyzers ) {
@@ -11,6 +11,11 @@ class Main {
     }
 
     public abstract class KeywordAnalyzer implements TextAnalyzer{
+
+        @Override
+        public Label processText(String text) {
+            return null;
+        }
 
         protected abstract String[] getKeywords();
 
