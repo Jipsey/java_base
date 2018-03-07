@@ -27,7 +27,7 @@ public class MainTest {
         System.setOut(new PrintStream(outStream));
     }
 
-    @Test(timeout = 8000)
+    @Test()//timeout = 8000
     public void main() throws Throwable {
         for (int i = 0; i < testSet.length; i++) {
             outStream.reset();
